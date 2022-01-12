@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Fredoka One', cursive;
+    font-weight: normal;
 
+}
 
 .container{
-    width: 95%;
+    width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -18,4 +24,40 @@
 
 .container * {
     text-align: center;
+}
+
+.text{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h2{
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.text, h2{
+    color:black;
+    animation: colorchange 5s infinite alternate;
+}
+
+@keyframes colorchange{
+    0% {
+        color: #ffffff;
+    }
+    20% {
+        color: #cccccc;
+    }
+    40% {
+        color: #999999;
+    }
+    60% {
+        color: #666666;
+    }
+    80% {
+        color: #333333;
+    }
+    100% {
+        color: #ffffff;
+    }
 }

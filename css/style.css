@@ -6,10 +6,8 @@
     box-sizing: border-box;
 }
 
-body{
+body * {
     font-family: 'Fredoka One', cursive;
-    font-weight: normal;
-
 }
 
 .container{
@@ -32,13 +30,31 @@ body{
 }
 
 h2{
-    margin-top: 15px;
+    margin-top: 45px;
     font-size: 1.5rem;
+    margin-bottom: 45px;
 }
 
 .text, h2{
     color:black;
     animation: colorchange 5s infinite alternate;
+}
+
+button{
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+
+}
+
+button:hover{
+    background-color: rgb(196, 196, 196);
+}
+
+button:active{
+    background-color: rgb(126, 126, 126);
 }
 
 @keyframes colorchange{
